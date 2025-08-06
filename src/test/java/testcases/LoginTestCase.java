@@ -27,6 +27,7 @@ public class LoginTestCase extends BrowserFactory{
 	@Test(dataProvider = "excelData",dataProviderClass = testData.ExcelDataProvider.class)
 	public void testExcel(String username, String pwd)
 	{
+		Thread.sleep(3000);	
 		setup("chrome", "https://www.saucedemo.com");
 		LoginElement le = new LoginElement(driver);
 		le.setUsername(username);
