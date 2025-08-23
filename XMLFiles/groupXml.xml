@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="SwagLabsSuite" parallel="true">
+<suite name="SwagLabs Group Complete Suite" parallel="true">
   <suite-files>
   <suite-file path="login.xml"></suite-file>
   <suite-file path="product.xml"></suite-file>

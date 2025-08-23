@@ -1,82 +1,72 @@
 package SwagLabsTestCases;
 
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.util.List;
 
-import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 
 import Common.BrowserFactory;
 import SwagLabElement.LoginElement;
+import utils.ExcelReader;
 
 public class LoginTestCase extends BrowserFactory {
 
-    @Test(priority=1)
-    public void userLogin() throws IOException {
-
-       
-        LoginElement loginElement=new LoginElement(driver);
+    @Test(priority = 1)
+    public void userLogin() {
+        LoginElement loginElement = new LoginElement(driver);
 
         String filePath = System.getProperty("user.dir") + "/ExcelFile/SwagLabLoginData.xlsx";
-        FileInputStream fileLocation = new FileInputStream(filePath);
+        List<String[]> testData = ExcelReader.readSheetData(filePath, 0);
 
-        try (XSSFWorkbook workbook = new XSSFWorkbook(fileLocation)) {
-            XSSFSheet sheet = workbook.getSheetAt(0);
-            int lastRow = sheet.getLastRowNum();
-            System.out.println("Total rows in Excel: " + lastRow);
+        for (int i = 0; i < testData.size(); i++) {
+            String[] row = testData.get(i);
+            String username = row[0];
+            String password = row[1];
+            String expectedResult = row[2];
 
-            DataFormatter dft = new DataFormatter();
+            System.out.println("Testing login for: " + username);
+            loginElement.setUsername(username);
+            loginElement.setPassword(password);
+            loginElement.setLoginButton();
 
-            for (int i = 1; i <= lastRow; i++) {
-                XSSFRow row = sheet.getRow(i);
-                if (row == null) continue;
+            boolean loginSuccess;
+            String errorMessage = "";
 
-                String username = dft.formatCellValue(row.getCell(0));
-                String password = dft.formatCellValue(row.getCell(1));
-                String expectedResult = dft.formatCellValue(row.getCell(2));
-
-                System.out.println("Testing login for: " + username);
-                loginElement.setUsername(username);
-                loginElement.setPassword(password);
-                loginElement.setLoginButton();
-
-                boolean loginSuccess;
-                String errorMessage = "";
-
+            try {
+                loginSuccess = driver.findElement(By.className("inventory_list")).isDisplayed();
+            } catch (NoSuchElementException e) {
+                loginSuccess = false;
                 try {
-                    loginSuccess = driver.findElement(By.className("inventory_list")).isDisplayed();
-                } catch (NoSuchElementException e) {
-                    loginSuccess = false;
-                    try {
-                        errorMessage = driver.findElement(By.cssSelector("h3[data-test='error']")).getText();
-                    } catch (NoSuchElementException ignored) {}
-                }
-                try {
-                	
-                	if (expectedResult.equalsIgnoreCase("Success")) {
-                		Assert.assertTrue(loginSuccess, "Expected login to succeed for user: " + username);
-                	} else {
-                		Assert.assertFalse(loginSuccess, "Expected login to fail for user: " + username + ". Error: " + errorMessage);
-                	}
-                }
-                catch(AssertionError ae) {
-
-
-                    System.out.println("Assertion failed for user: " + username);
-                    System.out.println("Error Message : "+errorMessage);
-                    System.out.println("Details: " + ae.getMessage());
-                    throw ae; 
-                }
-
-                driver.get("https://www.saucedemo.com/");
+                    errorMessage = driver.findElement(By.cssSelector("h3[data-test='error']")).getText();
+                } catch (NoSuchElementException ignored) {}
             }
+
+            try {
+                if (expectedResult.equalsIgnoreCase("Success")) {
+                    Assert.assertTrue(loginSuccess, "Expected login to succeed for user: " + username);
+                } else {
+                    Assert.assertFalse(loginSuccess, "Expected login to fail for user: " + username + ". Error: " + errorMessage);
+                }
+            } catch (AssertionError ae) {
+                System.out.println("Assertion failed for user: " + username);
+                System.out.println("Error Message: " + errorMessage);
+                System.out.println("Details: " + ae.getMessage());
+                throw ae;
+            }
+
+            driver.get("https://www.saucedemo.com/");
         }
     }
+    
+
+		@AfterSuite
+		public void tearDown() {
+		    if (driver != null) {
+		        driver.quit();
+    }
+}
 
 }

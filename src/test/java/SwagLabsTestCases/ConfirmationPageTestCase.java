@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -81,5 +82,12 @@ public class ConfirmationPageTestCase extends BrowserFactory{
 		String currentUrl = driver.getCurrentUrl();
 		Assert.assertTrue(currentUrl.contains("saucedemo.com"),"LogOut Function not redirected to login page");
 		
+	}
+	
+	@AfterSuite
+	public void tearDown() {
+	    if (driver != null) {
+	        driver.quit();
+	    }
 	}
 }

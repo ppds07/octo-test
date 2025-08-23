@@ -2,6 +2,7 @@ package SwagLabsTestCases;
 import java.util.List;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -146,7 +147,12 @@ public class CheckOutTwoTestCase extends BrowserFactory{
 	}
 	
 	
-
+	@AfterSuite
+	public void tearDown() {
+	    if (driver != null) {
+	        driver.quit();
+	    }
+	}
 
 
 }

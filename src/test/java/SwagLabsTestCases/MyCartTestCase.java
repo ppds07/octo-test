@@ -3,6 +3,7 @@ package SwagLabsTestCases;
 import java.util.Map;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -87,4 +88,11 @@ public class MyCartTestCase extends BrowserFactory {
         cartElement.clickCheckOutButton();
         System.out.println("Checkout button clicked successfully.");
     }
+    
+    @AfterSuite
+	public void tearDown() {
+	    if (driver != null) {
+	        driver.quit();
+	    }
+	}
 }

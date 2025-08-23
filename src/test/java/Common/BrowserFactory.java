@@ -22,14 +22,14 @@ public WebDriver driver;
 		
 		
 		if (browser1.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\rathi.prabhae\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 			ChromeOptions options= new ChromeOptions();
 			options.addArguments("--disable-notifications");
 			driver = new ChromeDriver(options);
 		} 
 		else if (browser1.equalsIgnoreCase("edge")) {
 			
-			System.setProperty("webdriver.edge.driver", "C:\\Users\\rathi.prabhae\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", "drivers/msedgedriver.exe");
 			driver = new EdgeDriver();
 		 
 		}
