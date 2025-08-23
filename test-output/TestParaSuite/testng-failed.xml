@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestParaSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="loginTest(failed)">
+    <parameter name="passowrd" value="secret_sauce"/>
+    <parameter name="username" value="standard_user"/>
+    <classes>
+      <class name="com.hclTech.login.TestPara">
+        <methods>
+          <include name="chromeBrowser"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.hclTech.login.TestPara -->
+    </classes>
+  </test> <!-- loginTest(failed) -->
+</suite> <!-- Failed suite [TestParaSuite] -->
