@@ -46,9 +46,8 @@ public WebDriver driver;
 
 	@AfterSuite
 	public void closeBrowser() {
-	    if (driver != null) {
-	        driver.quit();
-	    }
+	    driver.close();
+	    
 	}
 
 

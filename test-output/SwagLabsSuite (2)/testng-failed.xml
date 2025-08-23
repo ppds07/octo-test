@@ -7,8 +7,9 @@
       <class name="SwagLabsTestCases.MyCartTestCase">
         <methods>
           <include name="setup"/>
-          <include name="myCartFunction"/>
+          <include name="verifyRemoveFunctionality"/>
           <include name="closeBrowser"/>
+          <include name="cartLoginProcess"/>
         </methods>
       </class> <!-- SwagLabsTestCases.MyCartTestCase -->
     </classes>

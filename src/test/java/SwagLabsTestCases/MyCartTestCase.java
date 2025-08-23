@@ -81,7 +81,7 @@ public class MyCartTestCase extends BrowserFactory {
     }
 
     @Test(priority = 5)
-    public void myCartFunction() throws InterruptedException {
+    public void checkOutButtonFunction() throws InterruptedException {
     	
         cartElement = new MyCartElement(driver);
         cartElement.clickCheckOutButton();

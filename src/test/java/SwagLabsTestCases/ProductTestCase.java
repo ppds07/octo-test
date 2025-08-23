@@ -4,6 +4,7 @@ import java.util.Map;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Common.BrowserFactory;
