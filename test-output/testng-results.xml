@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-23T22:04:04 IST" name="Default suite" finished-at="2025-08-23T22:04:48 IST" duration-ms="43791">
+    <groups>
+    </groups>
+    <test started-at="2025-08-23T22:04:04 IST" name="Default test" finished-at="2025-08-23T22:04:48 IST" duration-ms="43791">
+      <class name="Testcases.CartPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.CartPage@3b0090a4]" started-at="2025-08-23T22:04:04 IST" name="setUp" finished-at="2025-08-23T22:04:42 IST" duration-ms="37742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initCartPage()[pri:0, instance:Testcases.CartPage@3b0090a4]" started-at="2025-08-23T22:04:42 IST" name="initCartPage" finished-at="2025-08-23T22:04:42 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initCartPage -->
+        <test-method signature="addProductToCart()[pri:1, instance:Testcases.CartPage@3b0090a4]" started-at="2025-08-23T22:04:42 IST" name="addProductToCart" finished-at="2025-08-23T22:04:43 IST" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCart -->
+        <test-method signature="checkCartPageOpened()[pri:2, instance:Testcases.CartPage@3b0090a4]" started-at="2025-08-23T22:04:43 IST" name="checkCartPageOpened" finished-at="2025-08-23T22:04:43 IST" depends-on-methods="Testcases.CartPage.addProductToCart" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCartPageOpened -->
+        <test-method signature="verifyCartIconCount()[pri:3, instance:Testcases.CartPage@3b0090a4]" started-at="2025-08-23T22:04:43 IST" name="verifyCartIconCount" finished-at="2025-08-23T22:04:43 IST" depends-on-methods="Testcases.CartPage.checkCartPageOpened" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartIconCount -->
+        <test-method signature="verifyCartItems()[pri:4, instance:Testcases.CartPage@3b0090a4]" started-at="2025-08-23T22:04:43 IST" name="verifyCartItems" finished-at="2025-08-23T22:04:43 IST" depends-on-methods="Testcases.CartPage.verifyCartIconCount" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartItems -->
+        <test-method signature="verifyProductPricesInCart()[pri:5, instance:Testcases.CartPage@3b0090a4]" started-at="2025-08-23T22:04:43 IST" name="verifyProductPricesInCart" finished-at="2025-08-23T22:04:45 IST" depends-on-methods="Testcases.CartPage.verifyCartItems" duration-ms="1856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductPricesInCart -->
+        <test-method signature="verifyProductDescription()[pri:6, instance:Testcases.CartPage@3b0090a4]" started-at="2025-08-23T22:04:45 IST" name="verifyProductDescription" finished-at="2025-08-23T22:04:46 IST" depends-on-methods="Testcases.CartPage.verifyProductPricesInCart" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDescription -->
+        <test-method signature="verifyRemoveButtonForBackpack()[pri:7, instance:Testcases.CartPage@3b0090a4]" started-at="2025-08-23T22:04:46 IST" name="verifyRemoveButtonForBackpack" finished-at="2025-08-23T22:04:46 IST" depends-on-methods="Testcases.CartPage.verifyProductDescription" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemoveButtonForBackpack -->
+        <test-method signature="verifyCheckout()[pri:8, instance:Testcases.CartPage@3b0090a4]" started-at="2025-08-23T22:04:46 IST" name="verifyCheckout" finished-at="2025-08-23T22:04:46 IST" depends-on-methods="Testcases.CartPage.verifyRemoveButtonForBackpack" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckout -->
+        <test-method signature="verifyContinueShopping()[pri:9, instance:Testcases.CartPage@3b0090a4]" started-at="2025-08-23T22:04:46 IST" name="verifyContinueShopping" finished-at="2025-08-23T22:04:47 IST" depends-on-methods="Testcases.CartPage.verifyCheckout" duration-ms="963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContinueShopping -->
+        <test-method signature="removeAllProducts()[pri:10, instance:Testcases.CartPage@3b0090a4]" started-at="2025-08-23T22:04:47 IST" name="removeAllProducts" finished-at="2025-08-23T22:04:48 IST" depends-on-methods="Testcases.CartPage.verifyContinueShopping" duration-ms="974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeAllProducts -->
+      </class> <!-- Testcases.CartPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
