@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-12T17:00:18 IST" name="SwagLabsSuite" finished-at="2025-08-12T17:00:52 IST" duration-ms="34519">
+  <suite started-at="2025-08-23T09:55:43 IST" name="SwagLabsSuite" finished-at="2025-08-23T09:55:59 IST" duration-ms="16297">
     <groups>
     </groups>
-    <test started-at="2025-08-12T17:00:18 IST" name="LoginTest" finished-at="2025-08-12T17:00:52 IST" duration-ms="34519">
-      <class name="SwagLabsTestCases.CheckOut1TestCase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SwagLabsTestCases.CheckOut1TestCase@2362f559]" started-at="2025-08-12T17:00:18 IST" name="setup" finished-at="2025-08-12T17:00:25 IST" duration-ms="7124" status="PASS">
+    <test started-at="2025-08-23T09:55:43 IST" name="LoginTest" finished-at="2025-08-23T09:55:59 IST" duration-ms="16297">
+      <class name="SwagLabsTestCases.ProductTestCase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SwagLabsTestCases.ProductTestCase@38afe297]" started-at="2025-08-23T09:55:34 IST" name="setup" finished-at="2025-08-23T09:55:43 IST" duration-ms="8963" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="uptoMyCart()[pri:1, instance:SwagLabsTestCases.CheckOut1TestCase@2362f559]" started-at="2025-08-12T17:00:25 IST" name="uptoMyCart" finished-at="2025-08-12T17:00:27 IST" duration-ms="1723" status="PASS">
+        <test-method is-config="true" signature="LoginProcess()[pri:0, instance:SwagLabsTestCases.ProductTestCase@38afe297]" started-at="2025-08-23T09:55:43 IST" name="LoginProcess" finished-at="2025-08-23T09:55:47 IST" duration-ms="3913" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- uptoMyCart -->
-        <test-method signature="CheckOut1Functions()[pri:2, instance:SwagLabsTestCases.CheckOut1TestCase@2362f559]" started-at="2025-08-12T17:00:27 IST" name="CheckOut1Functions" finished-at="2025-08-12T17:00:51 IST" duration-ms="24797" status="PASS">
+        </test-method> <!-- LoginProcess -->
+        <test-method signature="checkCartIconIfNoProductsAdded()[pri:1, instance:SwagLabsTestCases.ProductTestCase@38afe297]" started-at="2025-08-23T09:55:47 IST" name="checkCartIconIfNoProductsAdded" finished-at="2025-08-23T09:55:47 IST" duration-ms="169" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckOut1Functions -->
-        <test-method signature="testCancelButtonFunctionality()[pri:3, instance:SwagLabsTestCases.CheckOut1TestCase@2362f559]" started-at="2025-08-12T17:00:51 IST" name="testCancelButtonFunctionality" finished-at="2025-08-12T17:00:52 IST" duration-ms="749" status="PASS">
+        </test-method> <!-- checkCartIconIfNoProductsAdded -->
+        <test-method signature="checkCartIconIfProductsAdded()[pri:2, instance:SwagLabsTestCases.ProductTestCase@38afe297]" started-at="2025-08-23T09:55:47 IST" name="checkCartIconIfProductsAdded" finished-at="2025-08-23T09:55:50 IST" duration-ms="2698" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCancelButtonFunctionality -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SwagLabsTestCases.CheckOut1TestCase@2362f559]" started-at="2025-08-12T17:00:52 IST" name="closeBrowser" finished-at="2025-08-12T17:00:53 IST" duration-ms="390" status="PASS">
+        </test-method> <!-- checkCartIconIfProductsAdded -->
+        <test-method signature="checkCartIconAfterAddingMultipleProducts()[pri:3, instance:SwagLabsTestCases.ProductTestCase@38afe297]" started-at="2025-08-23T09:55:50 IST" name="checkCartIconAfterAddingMultipleProducts" finished-at="2025-08-23T09:55:54 IST" duration-ms="4728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCartIconAfterAddingMultipleProducts -->
+        <test-method signature="validateAllProductPrices()[pri:4, instance:SwagLabsTestCases.ProductTestCase@38afe297]" started-at="2025-08-23T09:55:54 IST" name="validateAllProductPrices" finished-at="2025-08-23T09:55:55 IST" duration-ms="1187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAllProductPrices -->
+        <test-method signature="printAllProductsWithDetails()[pri:5, instance:SwagLabsTestCases.ProductTestCase@38afe297]" started-at="2025-08-23T09:55:55 IST" name="printAllProductsWithDetails" finished-at="2025-08-23T09:55:57 IST" duration-ms="1326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printAllProductsWithDetails -->
+        <test-method signature="validateAllFilters()[pri:7, instance:SwagLabsTestCases.ProductTestCase@38afe297]" started-at="2025-08-23T09:55:57 IST" name="validateAllFilters" finished-at="2025-08-23T09:55:59 IST" duration-ms="2097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAllFilters -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SwagLabsTestCases.ProductTestCase@38afe297]" started-at="2025-08-23T09:55:59 IST" name="closeBrowser" finished-at="2025-08-23T09:56:01 IST" duration-ms="1550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- SwagLabsTestCases.CheckOut1TestCase -->
+      </class> <!-- SwagLabsTestCases.ProductTestCase -->
     </test> <!-- LoginTest -->
   </suite> <!-- SwagLabsSuite -->
 </testng-results>

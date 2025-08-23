@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 public class BrowserFactory {
@@ -14,9 +16,9 @@ public WebDriver driver;
 
 
 	
-	@BeforeClass
+	@BeforeSuite
 	@Parameters("browser")
-	public void setup(String browser1) {
+	public void setup(@Optional("chrome")String browser1) {
 		
 		
 		if (browser1.equalsIgnoreCase("chrome")) {
@@ -40,10 +42,15 @@ public WebDriver driver;
 		
 	 
 	}
+	
+
 	@AfterSuite
 	public void closeBrowser() {
-		driver.close();
+	    if (driver != null) {
+	        driver.quit();
+	    }
 	}
+
 
     public WebDriver getDriver() {
         return driver;

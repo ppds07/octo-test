@@ -49,7 +49,7 @@ public class CheckOut1TestCase extends BrowserFactory{
 		ProductElement productElement=new ProductElement(driver);
 		productElement.addSingleProduct();
 		productElement.clickCartIcon();
-		System.out.println("ProductPage CartIcon is clicked");
+		
 		
 		try {
 			
@@ -67,7 +67,7 @@ public class CheckOut1TestCase extends BrowserFactory{
 
 		MyCartElement cartElement=new MyCartElement(driver);
 		cartElement.clickCheckOutButton();
-		System.out.println("MyCart checkout is clicked");
+		
 		
 		try {
 	        String currentUrl = driver.getCurrentUrl();
