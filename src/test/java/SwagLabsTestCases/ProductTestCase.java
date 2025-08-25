@@ -105,12 +105,12 @@ public class ProductTestCase extends BrowserFactory {
 	    productElement.testAllFilters();
 	}
 	
-	@AfterSuite
-	public void tearDown() {
-	    if (driver != null) {
-	        driver.quit();
-	    }
-	}
+//	@AfterSuite
+//	public void tearDown() {
+//	    if (driver != null) {
+//	        driver.quit();
+//	    }
+//	}
 
 
 

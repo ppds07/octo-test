@@ -89,10 +89,10 @@ public class MyCartTestCase extends BrowserFactory {
         System.out.println("Checkout button clicked successfully.");
     }
     
-    @AfterSuite
-	public void tearDown() {
-	    if (driver != null) {
-	        driver.quit();
-	    }
-	}
+//    @AfterSuite
+//	public void tearDown() {
+//	    if (driver != null) {
+//	        driver.quit();
+//	    }
+//	}
 }

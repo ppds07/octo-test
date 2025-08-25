@@ -135,10 +135,10 @@ public class CheckOut1TestCase extends BrowserFactory {
         // softAssert.assertAll(); // Uncomment if you want to aggregate all assertions
     }
 
-    @AfterSuite
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+//    @AfterSuite
+//    public void tearDown() {
+//        if (driver != null) {
+//            driver.quit();
+//        }
+//    }
 }
