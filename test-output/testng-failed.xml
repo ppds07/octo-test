@@ -7,7 +7,6 @@
       <class name="SwagLabsTestCases.ConfirmationPageTestCase">
         <methods>
           <include name="setup"/>
-          <include name="closeBrowser"/>
           <include name="validateLogout"/>
           <include name="tearDown"/>
           <include name="LoginProcessForConfirmationPage"/>

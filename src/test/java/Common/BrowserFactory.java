@@ -43,11 +43,11 @@ public WebDriver driver;
 	}
 	
 
-	@AfterSuite
-	public void closeBrowser() {
-	    driver.close();
-	    
-	}
+//	@AfterSuite
+//	public void closeBrowser() {
+//	    driver.close();
+//	    
+//	}
 
 
     public WebDriver getDriver() {
