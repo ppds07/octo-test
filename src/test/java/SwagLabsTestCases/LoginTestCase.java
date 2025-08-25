@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import Common.BrowserFactory;
 import SwagLabElement.LoginElement;
 import utils.ExcelReader;
+import utils.ScreenshotService;
 
 public class LoginTestCase extends BrowserFactory {
 
@@ -42,6 +43,7 @@ public class LoginTestCase extends BrowserFactory {
                 try {
                     errorMessage = driver.findElement(By.cssSelector("h3[data-test='error']")).getText();
                 } catch (NoSuchElementException ignored) {}
+                ScreenshotService.captureScreenshot(driver, "LoginFailed_" + username);
             }
 
             try {
@@ -60,13 +62,11 @@ public class LoginTestCase extends BrowserFactory {
             driver.get("https://www.saucedemo.com/");
         }
     }
-    
 
-		@AfterSuite
-		public void tearDown() {
-		    if (driver != null) {
-		        driver.quit();
+    @AfterSuite
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
-}
-
 }

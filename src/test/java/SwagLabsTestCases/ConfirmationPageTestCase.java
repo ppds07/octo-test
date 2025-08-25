@@ -1,13 +1,9 @@
 package SwagLabsTestCases;
 
-import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.io.FileHandler;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -23,6 +19,7 @@ import SwagLabElement.LogOutElement;
 import SwagLabElement.LoginElement;
 import SwagLabElement.MyCartElement;
 import SwagLabElement.ProductElement;
+import utils.ScreenshotService;
 
 public class ConfirmationPageTestCase extends BrowserFactory{
 
@@ -54,9 +51,7 @@ public class ConfirmationPageTestCase extends BrowserFactory{
 	@Test(priority = 1)
 	public void ThankYouPagescreenshot() throws IOException {
 		
-		File firstSrc=((RemoteWebDriver) driver).getScreenshotAs(OutputType.FILE);
-		File destination=new File("./screenshots/thankyouPage.png");
-		FileHandler.copy(firstSrc, destination);
+		ScreenshotService.captureScreenshot(driver, "thankyouPage");
 		
 	}
 	@Test(priority = 2)

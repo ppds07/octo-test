@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="23" passed="21" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-23T16:25:59 IST" name="SwagLabs Product Suite" finished-at="2025-08-23T16:26:09 IST" duration-ms="9375">
+  <suite started-at="2025-08-25T12:01:50 IST" name="SwagLabs Group Complete Suite" finished-at="2025-08-25T12:01:50 IST" duration-ms="0">
     <groups>
     </groups>
-    <test started-at="2025-08-23T16:25:59 IST" name="ProductTest" finished-at="2025-08-23T16:26:09 IST" duration-ms="9375">
-      <class name="SwagLabsTestCases.ProductTestCase">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SwagLabsTestCases.ProductTestCase@5fbe4146]" started-at="2025-08-23T16:25:56 IST" name="setup" finished-at="2025-08-23T16:25:59 IST" duration-ms="3065" status="PASS">
+  </suite> <!-- SwagLabs Group Complete Suite -->
+  <suite started-at="2025-08-25T12:00:34 IST" name="SwagLabs Login Suite" finished-at="2025-08-25T12:00:42 IST" duration-ms="8144">
+    <groups>
+    </groups>
+    <test started-at="2025-08-25T12:00:34 IST" name="LoginTest" finished-at="2025-08-25T12:00:42 IST" duration-ms="8144">
+      <class name="SwagLabsTestCases.LoginTestCase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SwagLabsTestCases.LoginTestCase@8c3b9d]" started-at="2025-08-25T12:00:31 IST" name="setup" finished-at="2025-08-25T12:00:34 IST" duration-ms="3085" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,39 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="LoginProcess()[pri:0, instance:SwagLabsTestCases.ProductTestCase@5fbe4146]" started-at="2025-08-23T16:25:59 IST" name="LoginProcess" finished-at="2025-08-23T16:26:03 IST" duration-ms="3460" status="PASS">
+        <test-method signature="userLogin()[pri:1, instance:SwagLabsTestCases.LoginTestCase@8c3b9d]" started-at="2025-08-25T12:00:34 IST" name="userLogin" finished-at="2025-08-25T12:00:42 IST" duration-ms="8110" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginProcess -->
-        <test-method signature="checkCartIconIfNoProductsAdded()[pri:1, instance:SwagLabsTestCases.ProductTestCase@5fbe4146]" started-at="2025-08-23T16:26:03 IST" name="checkCartIconIfNoProductsAdded" finished-at="2025-08-23T16:26:03 IST" duration-ms="41" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkCartIconIfNoProductsAdded -->
-        <test-method signature="checkCartIconIfProductsAdded()[pri:2, instance:SwagLabsTestCases.ProductTestCase@5fbe4146]" started-at="2025-08-23T16:26:03 IST" name="checkCartIconIfProductsAdded" finished-at="2025-08-23T16:26:04 IST" duration-ms="1502" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkCartIconIfProductsAdded -->
-        <test-method signature="checkCartIconAfterAddingMultipleProducts()[pri:3, instance:SwagLabsTestCases.ProductTestCase@5fbe4146]" started-at="2025-08-23T16:26:04 IST" name="checkCartIconAfterAddingMultipleProducts" finished-at="2025-08-23T16:26:07 IST" duration-ms="2920" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkCartIconAfterAddingMultipleProducts -->
-        <test-method signature="validateAllProductPrices()[pri:4, instance:SwagLabsTestCases.ProductTestCase@5fbe4146]" started-at="2025-08-23T16:26:07 IST" name="validateAllProductPrices" finished-at="2025-08-23T16:26:08 IST" duration-ms="309" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAllProductPrices -->
-        <test-method signature="printAllProductsWithDetails()[pri:5, instance:SwagLabsTestCases.ProductTestCase@5fbe4146]" started-at="2025-08-23T16:26:08 IST" name="printAllProductsWithDetails" finished-at="2025-08-23T16:26:08 IST" duration-ms="361" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printAllProductsWithDetails -->
-        <test-method signature="validateAllFilters()[pri:7, instance:SwagLabsTestCases.ProductTestCase@5fbe4146]" started-at="2025-08-23T16:26:08 IST" name="validateAllFilters" finished-at="2025-08-23T16:26:09 IST" duration-ms="743" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAllFilters -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:SwagLabsTestCases.ProductTestCase@5fbe4146]" started-at="2025-08-23T16:26:09 IST" name="tearDown" finished-at="2025-08-23T16:26:09 IST" duration-ms="549" status="PASS">
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SwagLabsTestCases.LoginTestCase@8c3b9d]" started-at="2025-08-25T12:00:42 IST" name="tearDown" finished-at="2025-08-25T12:00:42 IST" duration-ms="402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SwagLabsTestCases.ProductTestCase@5fbe4146]" started-at="2025-08-23T16:26:09 IST" name="closeBrowser" finished-at="2025-08-23T16:26:09 IST" depends-on-methods="SwagLabsTestCases.ProductTestCase.tearDown" duration-ms="3" status="FAIL">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SwagLabsTestCases.LoginTestCase@8c3b9d]" started-at="2025-08-25T12:00:42 IST" name="closeBrowser" finished-at="2025-08-25T12:00:42 IST" depends-on-methods="SwagLabsTestCases.LoginTestCase.tearDown" duration-ms="4" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Session ID is null. Using WebDriver after calling quit()?
@@ -58,7 +38,7 @@ Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.edge.EdgeDriver
 Command: [null, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50323}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50323/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52821}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52821/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
@@ -66,7 +46,7 @@ Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.edge.EdgeDriver
 Command: [null, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50323}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50323/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52821}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52821/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
@@ -74,7 +54,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
 at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:417)
-at Common.BrowserFactory.closeBrowser(BrowserFactory.java:49)
+at Common.BrowserFactory.closeBrowser(BrowserFactory.java:48)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -86,6 +66,404 @@ at org.testng.SuiteRunner.run(SuiteRunner.java:312)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
 at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1269)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- SwagLabsTestCases.LoginTestCase -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- SwagLabs Login Suite -->
+  <suite started-at="2025-08-25T12:01:00 IST" name="SwagLabs MyCart Suite" finished-at="2025-08-25T12:01:26 IST" duration-ms="26245">
+    <groups>
+    </groups>
+    <test started-at="2025-08-25T12:01:00 IST" name="MyCartTest" finished-at="2025-08-25T12:01:26 IST" duration-ms="26245">
+      <class name="SwagLabsTestCases.MyCartTestCase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SwagLabsTestCases.MyCartTestCase@2f54a33d]" started-at="2025-08-25T12:00:58 IST" name="setup" finished-at="2025-08-25T12:01:00 IST" duration-ms="2327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="cartLoginProcess()[pri:0, instance:SwagLabsTestCases.MyCartTestCase@2f54a33d]" started-at="2025-08-25T12:01:00 IST" name="cartLoginProcess" finished-at="2025-08-25T12:01:06 IST" duration-ms="5995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartLoginProcess -->
+        <test-method signature="verifyCartItemCount()[pri:1, instance:SwagLabsTestCases.MyCartTestCase@2f54a33d]" started-at="2025-08-25T12:01:06 IST" name="verifyCartItemCount" finished-at="2025-08-25T12:01:11 IST" duration-ms="5045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartItemCount -->
+        <test-method signature="verifyCartContents()[pri:2, instance:SwagLabsTestCases.MyCartTestCase@2f54a33d]" started-at="2025-08-25T12:01:11 IST" name="verifyCartContents" finished-at="2025-08-25T12:01:11 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartContents -->
+        <test-method signature="verifyRemoveFunctionality()[pri:3, instance:SwagLabsTestCases.MyCartTestCase@2f54a33d]" started-at="2025-08-25T12:01:11 IST" name="verifyRemoveFunctionality" finished-at="2025-08-25T12:01:24 IST" duration-ms="12563" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Cart should be empty after removing items expected [0] but found [3]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Cart should be empty after removing items expected [0] but found [3]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at SwagLabsTestCases.MyCartTestCase.verifyRemoveFunctionality(MyCartTestCase.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1269)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemoveFunctionality -->
+        <test-method signature="verifyEmptyCartMessage()[pri:4, instance:SwagLabsTestCases.MyCartTestCase@2f54a33d]" started-at="2025-08-25T12:01:24 IST" name="verifyEmptyCartMessage" finished-at="2025-08-25T12:01:26 IST" duration-ms="2201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmptyCartMessage -->
+        <test-method signature="checkOutButtonFunction()[pri:5, instance:SwagLabsTestCases.MyCartTestCase@2f54a33d]" started-at="2025-08-25T12:01:26 IST" name="checkOutButtonFunction" finished-at="2025-08-25T12:01:26 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutButtonFunction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SwagLabsTestCases.MyCartTestCase@2f54a33d]" started-at="2025-08-25T12:01:26 IST" name="tearDown" finished-at="2025-08-25T12:01:27 IST" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SwagLabsTestCases.MyCartTestCase@2f54a33d]" started-at="2025-08-25T12:01:27 IST" name="closeBrowser" finished-at="2025-08-25T12:01:27 IST" depends-on-methods="SwagLabsTestCases.MyCartTestCase.tearDown" duration-ms="1" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52915}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52915/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52915}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52915/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:417)
+at Common.BrowserFactory.closeBrowser(BrowserFactory.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1269)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- SwagLabsTestCases.MyCartTestCase -->
+    </test> <!-- MyCartTest -->
+  </suite> <!-- SwagLabs MyCart Suite -->
+  <suite started-at="2025-08-25T12:01:45 IST" name="SwagLabs Confirmation Suite" finished-at="2025-08-25T12:01:49 IST" duration-ms="4162">
+    <groups>
+    </groups>
+    <test started-at="2025-08-25T12:01:45 IST" name="CheckOutConfirmationTest" finished-at="2025-08-25T12:01:49 IST" duration-ms="4162">
+      <class name="SwagLabsTestCases.ConfirmationPageTestCase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SwagLabsTestCases.ConfirmationPageTestCase@87a85e1]" started-at="2025-08-25T12:01:43 IST" name="setup" finished-at="2025-08-25T12:01:45 IST" duration-ms="2284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="LoginProcessForConfirmationPage()[pri:0, instance:SwagLabsTestCases.ConfirmationPageTestCase@87a85e1]" started-at="2025-08-25T12:01:45 IST" name="LoginProcessForConfirmationPage" finished-at="2025-08-25T12:01:49 IST" duration-ms="3867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginProcessForConfirmationPage -->
+        <test-method signature="ThankYouPagescreenshot()[pri:1, instance:SwagLabsTestCases.ConfirmationPageTestCase@87a85e1]" started-at="2025-08-25T12:01:49 IST" name="ThankYouPagescreenshot" finished-at="2025-08-25T12:01:49 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThankYouPagescreenshot -->
+        <test-method signature="validateThankYouPage()[pri:2, instance:SwagLabsTestCases.ConfirmationPageTestCase@87a85e1]" started-at="2025-08-25T12:01:49 IST" name="validateThankYouPage" finished-at="2025-08-25T12:01:49 IST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateThankYouPage -->
+        <test-method signature="validateLogout()[pri:3, instance:SwagLabsTestCases.ConfirmationPageTestCase@87a85e1]" started-at="2025-08-25T12:01:49 IST" name="validateLogout" finished-at="2025-08-25T12:01:49 IST" duration-ms="98" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: MicrosoftEdge=139.0.3405.111)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2f22d4cd2d3b7d10adfcd028bdf65e79, clickElement {id=f.DB1F76D884C417FAB4713C2128B582C1.d.8FBE26D87CB610BF83346F2F96D59C88.e.52}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53059}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53059/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (2f22d4cd2d3b7d10adfcd028bdf65e79)] -> id: logout_sidebar_link]
+Session ID: 2f22d4cd2d3b7d10adfcd028bdf65e79]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=139.0.3405.111)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2f22d4cd2d3b7d10adfcd028bdf65e79, clickElement {id=f.DB1F76D884C417FAB4713C2128B582C1.d.8FBE26D87CB610BF83346F2F96D59C88.e.52}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53059}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53059/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (2f22d4cd2d3b7d10adfcd028bdf65e79)] -> id: logout_sidebar_link]
+Session ID: 2f22d4cd2d3b7d10adfcd028bdf65e79
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at SwagLabElement.LogOutElement.clickLogout(LogOutElement.java:23)
+at SwagLabsTestCases.ConfirmationPageTestCase.validateLogout(ConfirmationPageTestCase.java:75)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1269)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SwagLabsTestCases.ConfirmationPageTestCase@87a85e1]" started-at="2025-08-25T12:01:49 IST" name="tearDown" finished-at="2025-08-25T12:01:50 IST" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SwagLabsTestCases.ConfirmationPageTestCase@87a85e1]" started-at="2025-08-25T12:01:50 IST" name="closeBrowser" finished-at="2025-08-25T12:01:50 IST" depends-on-methods="SwagLabsTestCases.ConfirmationPageTestCase.tearDown" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53059}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53059/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53059}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53059/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:417)
+at Common.BrowserFactory.closeBrowser(BrowserFactory.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1269)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- SwagLabsTestCases.ConfirmationPageTestCase -->
+    </test> <!-- CheckOutConfirmationTest -->
+  </suite> <!-- SwagLabs Confirmation Suite -->
+  <suite started-at="2025-08-25T12:00:47 IST" name="SwagLabs Product Suite" finished-at="2025-08-25T12:00:57 IST" duration-ms="9897">
+    <groups>
+    </groups>
+    <test started-at="2025-08-25T12:00:47 IST" name="ProductTest" finished-at="2025-08-25T12:00:57 IST" duration-ms="9897">
+      <class name="SwagLabsTestCases.ProductTestCase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SwagLabsTestCases.ProductTestCase@3e96bacf]" started-at="2025-08-25T12:00:42 IST" name="setup" finished-at="2025-08-25T12:00:47 IST" duration-ms="4599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="LoginProcess()[pri:0, instance:SwagLabsTestCases.ProductTestCase@3e96bacf]" started-at="2025-08-25T12:00:47 IST" name="LoginProcess" finished-at="2025-08-25T12:00:51 IST" duration-ms="3422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginProcess -->
+        <test-method signature="checkCartIconIfNoProductsAdded()[pri:1, instance:SwagLabsTestCases.ProductTestCase@3e96bacf]" started-at="2025-08-25T12:00:51 IST" name="checkCartIconIfNoProductsAdded" finished-at="2025-08-25T12:00:51 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCartIconIfNoProductsAdded -->
+        <test-method signature="checkCartIconIfProductsAdded()[pri:2, instance:SwagLabsTestCases.ProductTestCase@3e96bacf]" started-at="2025-08-25T12:00:51 IST" name="checkCartIconIfProductsAdded" finished-at="2025-08-25T12:00:52 IST" duration-ms="1520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCartIconIfProductsAdded -->
+        <test-method signature="checkCartIconAfterAddingMultipleProducts()[pri:3, instance:SwagLabsTestCases.ProductTestCase@3e96bacf]" started-at="2025-08-25T12:00:52 IST" name="checkCartIconAfterAddingMultipleProducts" finished-at="2025-08-25T12:00:55 IST" duration-ms="3013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCartIconAfterAddingMultipleProducts -->
+        <test-method signature="validateAllProductPrices()[pri:4, instance:SwagLabsTestCases.ProductTestCase@3e96bacf]" started-at="2025-08-25T12:00:55 IST" name="validateAllProductPrices" finished-at="2025-08-25T12:00:56 IST" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAllProductPrices -->
+        <test-method signature="printAllProductsWithDetails()[pri:5, instance:SwagLabsTestCases.ProductTestCase@3e96bacf]" started-at="2025-08-25T12:00:56 IST" name="printAllProductsWithDetails" finished-at="2025-08-25T12:00:56 IST" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printAllProductsWithDetails -->
+        <test-method signature="validateAllFilters()[pri:7, instance:SwagLabsTestCases.ProductTestCase@3e96bacf]" started-at="2025-08-25T12:00:56 IST" name="validateAllFilters" finished-at="2025-08-25T12:00:57 IST" duration-ms="1000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAllFilters -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SwagLabsTestCases.ProductTestCase@3e96bacf]" started-at="2025-08-25T12:00:57 IST" name="tearDown" finished-at="2025-08-25T12:00:58 IST" duration-ms="495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SwagLabsTestCases.ProductTestCase@3e96bacf]" started-at="2025-08-25T12:00:58 IST" name="closeBrowser" finished-at="2025-08-25T12:00:58 IST" depends-on-methods="SwagLabsTestCases.ProductTestCase.tearDown" duration-ms="1" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52860}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52860/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52860}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52860/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:417)
+at Common.BrowserFactory.closeBrowser(BrowserFactory.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1269)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
@@ -101,4 +479,184 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
       </class> <!-- SwagLabsTestCases.ProductTestCase -->
     </test> <!-- ProductTest -->
   </suite> <!-- SwagLabs Product Suite -->
+  <suite started-at="2025-08-25T12:01:29 IST" name="SwagLabs Checkout Suite" finished-at="2025-08-25T12:01:36 IST" duration-ms="6209">
+    <groups>
+    </groups>
+    <test started-at="2025-08-25T12:01:29 IST" name="checkOut1Test" finished-at="2025-08-25T12:01:36 IST" duration-ms="6209">
+      <class name="SwagLabsTestCases.CheckOut1TestCase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SwagLabsTestCases.CheckOut1TestCase@5ab9e72c]" started-at="2025-08-25T12:01:27 IST" name="setup" finished-at="2025-08-25T12:01:29 IST" duration-ms="2657" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="uptoMyCart()[pri:1, instance:SwagLabsTestCases.CheckOut1TestCase@5ab9e72c]" started-at="2025-08-25T12:01:29 IST" name="uptoMyCart" finished-at="2025-08-25T12:01:30 IST" duration-ms="536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uptoMyCart -->
+        <test-method signature="CheckOut1Functions()[pri:2, instance:SwagLabsTestCases.CheckOut1TestCase@5ab9e72c]" started-at="2025-08-25T12:01:30 IST" name="CheckOut1Functions" finished-at="2025-08-25T12:01:36 IST" duration-ms="5668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckOut1Functions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SwagLabsTestCases.CheckOut1TestCase@5ab9e72c]" started-at="2025-08-25T12:01:36 IST" name="tearDown" finished-at="2025-08-25T12:01:36 IST" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SwagLabsTestCases.CheckOut1TestCase@5ab9e72c]" started-at="2025-08-25T12:01:36 IST" name="closeBrowser" finished-at="2025-08-25T12:01:36 IST" depends-on-methods="SwagLabsTestCases.CheckOut1TestCase.tearDown" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52977}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52977/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52977}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52977/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:417)
+at Common.BrowserFactory.closeBrowser(BrowserFactory.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1269)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- SwagLabsTestCases.CheckOut1TestCase -->
+    </test> <!-- checkOut1Test -->
+  </suite> <!-- SwagLabs Checkout Suite -->
+  <suite started-at="2025-08-25T12:01:38 IST" name="SwagLabs Checkout Suite (0)" finished-at="2025-08-25T12:01:42 IST" duration-ms="4333">
+    <groups>
+    </groups>
+    <test started-at="2025-08-25T12:01:38 IST" name="CheckOutTwoTest" finished-at="2025-08-25T12:01:42 IST" duration-ms="4333">
+      <class name="SwagLabsTestCases.CheckOutTwoTestCase">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:SwagLabsTestCases.CheckOutTwoTestCase@157853da]" started-at="2025-08-25T12:01:36 IST" name="setup" finished-at="2025-08-25T12:01:38 IST" duration-ms="2237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="LoginProcessForCheckOutTwo()[pri:0, instance:SwagLabsTestCases.CheckOutTwoTestCase@157853da]" started-at="2025-08-25T12:01:38 IST" name="LoginProcessForCheckOutTwo" finished-at="2025-08-25T12:01:42 IST" duration-ms="3889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginProcessForCheckOutTwo -->
+        <test-method signature="verifyPageLoad()[pri:1, instance:SwagLabsTestCases.CheckOutTwoTestCase@157853da]" started-at="2025-08-25T12:01:42 IST" name="verifyPageLoad" finished-at="2025-08-25T12:01:42 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageLoad -->
+        <test-method signature="validateCheckoutSummary()[pri:2, instance:SwagLabsTestCases.CheckOutTwoTestCase@157853da]" started-at="2025-08-25T12:01:42 IST" name="validateCheckoutSummary" finished-at="2025-08-25T12:01:42 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckoutSummary -->
+        <test-method signature="validateTotalPriceCalculationWithTax()[pri:3, instance:SwagLabsTestCases.CheckOutTwoTestCase@157853da]" started-at="2025-08-25T12:01:42 IST" name="validateTotalPriceCalculationWithTax" finished-at="2025-08-25T12:01:42 IST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTotalPriceCalculationWithTax -->
+        <test-method signature="clickFinishButton()[pri:4, instance:SwagLabsTestCases.CheckOutTwoTestCase@157853da]" started-at="2025-08-25T12:01:42 IST" name="clickFinishButton" finished-at="2025-08-25T12:01:42 IST" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickFinishButton -->
+        <test-method signature="testCancelButtonFunctionality()[pri:5, instance:SwagLabsTestCases.CheckOutTwoTestCase@157853da]" started-at="2025-08-25T12:01:42 IST" name="testCancelButtonFunctionality" finished-at="2025-08-25T12:01:42 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCancelButtonFunctionality -->
+        <test-method signature="validatePaymentAndShippingInfo()[pri:6, instance:SwagLabsTestCases.CheckOutTwoTestCase@157853da]" started-at="2025-08-25T12:01:42 IST" name="validatePaymentAndShippingInfo" finished-at="2025-08-25T12:01:42 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePaymentAndShippingInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SwagLabsTestCases.CheckOutTwoTestCase@157853da]" started-at="2025-08-25T12:01:42 IST" name="tearDown" finished-at="2025-08-25T12:01:43 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SwagLabsTestCases.CheckOutTwoTestCase@157853da]" started-at="2025-08-25T12:01:43 IST" name="closeBrowser" finished-at="2025-08-25T12:01:43 IST" depends-on-methods="SwagLabsTestCases.CheckOutTwoTestCase.tearDown" duration-ms="1" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53016}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53016/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 139.0.3405.111, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53016}, msedge: {msedgedriverVersion: 138.0.3351.109 (3e2a22a9de0..., userDataDir: C:\Users\PRIYAD~1.P\AppData...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53016/devtoo..., se:cdpVersion: 139.0.3405.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:417)
+at Common.BrowserFactory.closeBrowser(BrowserFactory.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1269)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- SwagLabsTestCases.CheckOutTwoTestCase -->
+    </test> <!-- CheckOutTwoTest -->
+  </suite> <!-- SwagLabs Checkout Suite (0) -->
 </testng-results>
