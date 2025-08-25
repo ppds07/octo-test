@@ -1,13 +1,8 @@
 package SwagLabElement;
 
-
 import org.testng.Assert;
-
 import java.time.Duration;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import org.openqa.selenium.WebDriver;
@@ -19,164 +14,152 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ProductElement {
-	
-	WebDriver driver;
-	@FindBy(xpath="//a[@class='shopping_cart_link']")
-	WebElement cartIcon;
-	
-	@FindBy(xpath="//button[@data-test='add-to-cart-sauce-labs-backpack']")
-	WebElement addSingleProduct;
-	
-	@FindBy(xpath="//button[@data-test='add-to-cart-sauce-labs-backpack']")
-	WebElement product1;
-	@FindBy(xpath="//button[@data-test='add-to-cart-sauce-labs-bike-light']")
-	WebElement product2;
-	
-	@FindBy(xpath="//button[contains(@data-test,'remove')]")
-	List<WebElement> removeButtons;
 
-	@FindBy(className="btn_inventory")
-	List<WebElement> allAddToCartButtons;
-	
+    WebDriver driver;
 
-	@FindBy(className = "inventory_item_name")
-	List<WebElement> productNames;
-	
-	@FindBy(className = "inventory_item_price")
-	List<WebElement> productPrices;
+    @FindBy(xpath = "//a[@class='shopping_cart_link']")
+    WebElement cartIcon;
 
-	@FindBy(className = "inventory_item_desc")
-	List<WebElement> productDescriptions;
+    @FindBy(xpath = "//button[@data-test='add-to-cart-sauce-labs-backpack']")
+    WebElement addSingleProduct;
 
-	@FindBy(className = "product_sort_container")
-	WebElement filterDropdown;
-	
-	public void testAllFilters() {
-	    Select select = new Select(filterDropdown);
+    @FindBy(xpath = "//button[@data-test='add-to-cart-sauce-labs-backpack']")
+    WebElement product1;
 
-	    String[] filters = {
-	        "Name (A to Z)",
-	        "Name (Z to A)",
-	        "Price (low to high)",
-	        "Price (high to low)"
-	    };
+    @FindBy(xpath = "//button[@data-test='add-to-cart-sauce-labs-bike-light']")
+    WebElement product2;
 
-	    for (String filter : filters) {
-	        select.selectByVisibleText(filter);
+    @FindBy(xpath = "//button[contains(@data-test,'remove')]")
+    List<WebElement> removeButtons;
 
-	        List<String> names = productNames.stream()
-	                                         .map(WebElement::getText)
-	                                         .collect(Collectors.toList());
+    @FindBy(className = "btn_inventory")
+    List<WebElement> allAddToCartButtons;
 
-	        List<Double> prices = productPrices.stream()
-	                                           .map(WebElement::getText)
-	                                           .map(p -> p.replace("$", ""))
-	                                           .map(Double::parseDouble)
-	                                           .collect(Collectors.toList());
+    @FindBy(className = "inventory_item_name")
+    List<WebElement> productNames;
 
-	        boolean isSorted = false;
+    @FindBy(className = "inventory_item_price")
+    List<WebElement> productPrices;
 
-	        switch (filter) {
-	        
-	            case "Name (A to Z)":
-	                isSorted = names.equals(names.stream().sorted().collect(Collectors.toList()));
-	                break;
-	            case "Name (Z to A)":
-	                isSorted = names.equals(names.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList()));
-	                break;
-	            case "Price (low to high)":
-	                isSorted = prices.equals(prices.stream().sorted().collect(Collectors.toList()));
-	                break;
-	            case "Price (high to low)":
-	                isSorted = prices.equals(prices.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList()));
-	                break;
-	        }
+    @FindBy(className = "inventory_item_desc")
+    List<WebElement> productDescriptions;
 
-	        System.out.println("Filter: " + filter + " -> Sorting " + (isSorted ? "Success" : "Failed"));
-	    }
-	}
+    @FindBy(className = "product_sort_container")
+    WebElement filterDropdown;
 
+    public ProductElement(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+        this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+    }
 
-	public void printAllProductDetails() {
-		
-	    for (int i = 0; i < productNames.size(); i++) {
-	        String name = productNames.get(i).getText().trim();
-	        String description = productDescriptions.get(i).getText().trim();
-	        String price = productPrices.get(i).getText().trim();
+    public void testAllFilters() {
+        Select select = new Select(filterDropdown);
 
-	        System.out.println("Product: " + name);
-	        System.out.println("Description: " + description);
-	        System.out.println("Price: " + price);
-	        System.out.println();
-	    }
-	}
+        String[] filters = {
+            "Name (A to Z)",
+            "Name (Z to A)",
+            "Price (low to high)",
+            "Price (high to low)"
+        };
 
-	public Map<String, String> getProductPriceMap() {
-	    Map<String, String> productPriceMap = new HashMap<>();
-	
-	    for (int i = 0; i < productNames.size(); i++) {
-	        String name = productNames.get(i).getText().trim();
-	        String price = productPrices.get(i).getText().trim();
-	        productPriceMap.put(name, price);
-	    }
-	
-	    return productPriceMap;
-	}
+        for (String filter : filters) {
+            select.selectByVisibleText(filter);
 
+            List<String> names = productNames.stream()
+                    .map(WebElement::getText)
+                    .collect(Collectors.toList());
 
-	public void addMultipleProducts(int n) throws InterruptedException {
-		
+            List<Double> prices = productPrices.stream()
+                    .map(WebElement::getText)
+                    .map(p -> p.replace("$", ""))
+                    .map(Double::parseDouble)
+                    .collect(Collectors.toList());
 
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-	for (int i = 0; i < n && i < allAddToCartButtons.size(); i++) {
-	    wait.until(ExpectedConditions.elementToBeClickable(allAddToCartButtons.get(i))).click();
-	}
+            boolean isSorted = false;
 
-	}
-	public void removeAddedProducts() throws InterruptedException {
-		
-		for (int i=0;i<removeButtons.size();i++) {
-			Thread.sleep(1000);
-			removeButtons.get(i).click();
-		}
-	}
+            switch (filter) {
+                case "Name (A to Z)":
+                    isSorted = names.equals(names.stream().sorted().collect(Collectors.toList()));
+                    break;
+                case "Name (Z to A)":
+                    isSorted = names.equals(names.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList()));
+                    break;
+                case "Price (low to high)":
+                    isSorted = prices.equals(prices.stream().sorted().collect(Collectors.toList()));
+                    break;
+                case "Price (high to low)":
+                    isSorted = prices.equals(prices.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList()));
+                    break;
+            }
 
-	public int getCartItemCount() {
-		
-	    String countText = cartIcon.getText().trim();
-	    return countText.isEmpty() ? 0 : Integer.parseInt(countText);
-	}
+            System.out.println("Filter: " + filter + " -> Sorting " + (isSorted ? "Success" : "Failed"));
+        }
+    }
 
-	public void clickCartIcon() {
-		
-		String countText = cartIcon.getText().trim();
+    public void printAllProductDetails() {
+        for (int i = 0; i < productNames.size(); i++) {
+            String name = productNames.get(i).getText().trim();
+            String description = productDescriptions.get(i).getText().trim();
+            String price = productPrices.get(i).getText().trim();
 
-		if (countText == null || countText.trim().isEmpty()) {
-		        
-			System.out.println("Cart is empty");
-		    Assert.assertTrue(true, "Cart is empty as expected");
-		    
-		} 
-		else {
-		        
-			int count = Integer.parseInt(countText);
-		    Assert.assertTrue(count > 0, "Cart has items");
-		    cartIcon.click();
-		    System.out.println("ProductPage CartIcon is clicked");
-		}
-	}
-	
-	public void addSingleProduct() {
-		
-		addSingleProduct.click();
-	}
-	public void addTwoProduct() {
-		
-		product1.click();
-		product2.click();
-	}
-	public ProductElement(WebDriver driver) {
-		
-		PageFactory.initElements(driver,this);
-	}
+            System.out.println("Product: " + name);
+            System.out.println("Description: " + description);
+            System.out.println("Price: " + price);
+            System.out.println();
+        }
+    }
+
+    public Map<String, String> getProductPriceMap() {
+        Map<String, String> productPriceMap = new HashMap<>();
+
+        for (int i = 0; i < productNames.size(); i++) {
+            String name = productNames.get(i).getText().trim();
+            String price = productPrices.get(i).getText().trim();
+            productPriceMap.put(name, price);
+        }
+
+        return productPriceMap;
+    }
+
+    public void addMultipleProducts(int n) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        for (int i = 0; i < n && i < allAddToCartButtons.size(); i++) {
+            wait.until(ExpectedConditions.elementToBeClickable(allAddToCartButtons.get(i))).click();
+        }
+    }
+
+    public void removeAddedProducts() {
+        for (WebElement removeButton : removeButtons) {
+            removeButton.click();
+        }
+    }
+
+    public int getCartItemCount() {
+        String countText = cartIcon.getText().trim();
+        return countText.isEmpty() ? 0 : Integer.parseInt(countText);
+    }
+
+    public void clickCartIcon() {
+        String countText = cartIcon.getText().trim();
+
+        if (countText == null || countText.trim().isEmpty()) {
+            System.out.println("Cart is empty");
+            Assert.assertTrue(true, "Cart is empty as expected");
+        } else {
+            int count = Integer.parseInt(countText);
+            Assert.assertTrue(count > 0, "Cart has items");
+            cartIcon.click();
+            System.out.println("ProductPage CartIcon is clicked");
+        }
+    }
+
+    public void addSingleProduct() {
+        addSingleProduct.click();
+    }
+
+    public void addTwoProduct() {
+        product1.click();
+        product2.click();
+    }
 }

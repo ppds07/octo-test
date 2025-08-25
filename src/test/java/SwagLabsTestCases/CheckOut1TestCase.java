@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -20,9 +21,8 @@ public class CheckOut1TestCase extends BrowserFactory {
 
     String checkOutUrl;
 
-    @Test(priority = 1)
+    @BeforeClass
     public void uptoMyCart() {
-
         LoginElement loginElement = new LoginElement(driver);
         loginElement.setUsername("standard_user");
         loginElement.setPassword("secret_sauce");
@@ -70,7 +70,7 @@ public class CheckOut1TestCase extends BrowserFactory {
         }
     }
 
-    @Test(priority = 2)
+    @Test(priority = 1)
     public void CheckOut1Functions() {
         String filePath = System.getProperty("user.dir") + "/ExcelFile/SwagLabLoginData.xlsx";
         List<String[]> testData = ExcelReader.readSheetData(filePath, 1);
@@ -104,15 +104,18 @@ public class CheckOut1TestCase extends BrowserFactory {
                 ScreenshotService.captureScreenshot(driver, "CartError_" + firstname);
             }
 
-            boolean checkoutSuccess;
+            boolean checkoutSuccess = false;
             String errorMessage = "";
 
             try {
                 checkoutSuccess = driver.getCurrentUrl().contains("checkout-step-two.html");
             } catch (Exception e) {
-                checkoutSuccess = false;
-                errorMessage = driver.findElement(By.className("error-message-container")).getText();
-                System.out.println("Error Message displayed: " + errorMessage);
+                try {
+                    errorMessage = driver.findElement(By.className("error-message-container")).getText();
+                    System.out.println("Error Message displayed: " + errorMessage);
+                } catch (Exception inner) {
+                    System.out.println("Error message not found: " + inner.getMessage());
+                }
                 ScreenshotService.captureScreenshot(driver, "CheckoutError_" + firstname);
             }
 
@@ -135,10 +138,10 @@ public class CheckOut1TestCase extends BrowserFactory {
         // softAssert.assertAll(); // Uncomment if you want to aggregate all assertions
     }
 
-//    @AfterSuite
-//    public void tearDown() {
-//        if (driver != null) {
-//            driver.quit();
-//        }
-//    }
+    @AfterSuite
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }

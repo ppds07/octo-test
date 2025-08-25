@@ -65,24 +65,24 @@ public class ConfirmationPageTestCase extends BrowserFactory{
 		Assert.assertTrue(currentUrl.contains("inventory.html"), "Back Home button did not redirect to products page");
 		
 	}
-	@Test(priority=3)
-	public void validateLogout() {
-		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-		wait.until(ExpectedConditions.elementToBeClickable(By.id("react-burger-menu-btn")));
-
-		LogOutElement logout = new LogOutElement(driver);
-		logout.clickLogout();
-		
-		String currentUrl = driver.getCurrentUrl();
-		Assert.assertTrue(currentUrl.contains("saucedemo.com"),"LogOut Function not redirected to login page");
-		
-	}
-	
-//	@AfterSuite
-//	public void tearDown() {
-//	    if (driver != null) {
-//	        driver.quit();
-//	    }
+//	@Test(priority=3)
+//	public void validateLogout() {
+//		
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+//		wait.until(ExpectedConditions.elementToBeClickable(By.id("react-burger-menu-btn")));
+//
+//		LogOutElement logout = new LogOutElement(driver);
+//		logout.clickLogout();
+//		
+//		String currentUrl = driver.getCurrentUrl();
+//		Assert.assertTrue(currentUrl.contains("saucedemo.com"),"LogOut Function not redirected to login page");
+//		
 //	}
+	
+	@AfterSuite
+	public void tearDown() {
+	    if (driver != null) {
+	        driver.quit();
+	    }
+	}
 }

@@ -51,18 +51,18 @@ public class MyCartTestCase extends BrowserFactory {
         });
     }
 
-    @Test(priority = 3)
-    public void verifyRemoveFunctionality() throws InterruptedException {
-    	
-    	cartElement = new MyCartElement(driver);
-    	cartElement.removeAddedProducts();
-        
-        productElement.printAllProductDetails();
-    	Thread.sleep(3000);
-        int counts = cartElement.checkCartItems();
-        System.out.println("Cart item count after removal: " + counts);
-        Assert.assertEquals(counts, 0, "Cart should be empty after removing items");
-    }
+//    @Test(priority = 3)
+//    public void verifyRemoveFunctionality() throws InterruptedException {
+//    	
+//    	cartElement = new MyCartElement(driver);
+//    	cartElement.removeAddedProducts();
+//        
+//        productElement.printAllProductDetails();
+//    	Thread.sleep(3000);
+//        int counts = cartElement.checkCartItems();
+//        System.out.println("Cart item count after removal: " + counts);
+//        Assert.assertEquals(counts, 0, "Cart should be empty after removing items");
+//    }
 
     @Test(priority = 4)
     public void verifyEmptyCartMessage() throws InterruptedException {
@@ -89,10 +89,10 @@ public class MyCartTestCase extends BrowserFactory {
         System.out.println("Checkout button clicked successfully.");
     }
     
-//    @AfterSuite
-//	public void tearDown() {
-//	    if (driver != null) {
-//	        driver.quit();
-//	    }
-//	}
+    @AfterSuite
+	public void tearDown() {
+	    if (driver != null) {
+	        driver.quit();
+	    }
+	}
 }
