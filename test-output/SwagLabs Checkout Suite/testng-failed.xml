@@ -4,13 +4,20 @@
   <parameter name="browser" value="edge"/>
   <test thread-count="5" name="checkOut1Test(failed)">
     <classes>
-      <class name="SwagLabsTestCases.CheckOut1TestCase">
+      <class name="SwagLabsTestCases.CheckoutTestCase">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="CheckOut1Functions"/>
+          <include name="testCheckoutSummaryValidation"/>
+          <include name="testCheckoutStepTwoPageLoad"/>
+          <include name="testCancelButton"/>
+          <include name="testTotalPriceCalculation"/>
+          <include name="testCheckoutStepOneDataDriven"/>
+          <include name="testPaymentAndShippingInfo"/>
+          <include name="testFinishButton"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- SwagLabsTestCases.CheckOut1TestCase -->
+      </class> <!-- SwagLabsTestCases.CheckoutTestCase -->
     </classes>
   </test> <!-- checkOut1Test(failed) -->
 </suite> <!-- Failed suite [SwagLabs Checkout Suite] -->

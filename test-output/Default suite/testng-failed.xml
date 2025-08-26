@@ -6,7 +6,7 @@
       <class name="SwagLabsTestCases.LoginTestCase">
         <methods>
           <include name="setup"/>
-          <include name="closeBrowser"/>
+          <include name="tearDown"/>
           <include name="userLogin"/>
         </methods>
       </class> <!-- SwagLabsTestCases.LoginTestCase -->

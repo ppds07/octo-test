@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import Common.BrowserFactory;
-import SwagLabElement.CheckOut1Element;
+import SwagLabElement.CheckOutOneElement;
 import SwagLabElement.CheckOutTwoElement;
 import SwagLabElement.ConfirmationPageElement;
 import SwagLabElement.LogOutElement;
@@ -39,7 +39,7 @@ public class ConfirmationPageTestCase extends BrowserFactory{
 		MyCartElement cartElement=new MyCartElement(driver);
 		cartElement.clickCheckOutButton();
 		
-		CheckOut1Element checkOne=new CheckOut1Element(driver);
+		CheckOutOneElement checkOne=new CheckOutOneElement(driver);
 		checkOne.setFirstName("Rathi Prabha");
 		checkOne.setLastName("E");
 		checkOne.setPostalCode("636030");
@@ -65,19 +65,19 @@ public class ConfirmationPageTestCase extends BrowserFactory{
 		Assert.assertTrue(currentUrl.contains("inventory.html"), "Back Home button did not redirect to products page");
 		
 	}
-//	@Test(priority=3)
-//	public void validateLogout() {
-//		
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-//		wait.until(ExpectedConditions.elementToBeClickable(By.id("react-burger-menu-btn")));
-//
-//		LogOutElement logout = new LogOutElement(driver);
-//		logout.clickLogout();
-//		
-//		String currentUrl = driver.getCurrentUrl();
-//		Assert.assertTrue(currentUrl.contains("saucedemo.com"),"LogOut Function not redirected to login page");
-//		
-//	}
+	@Test(priority=3)
+	public void validateLogout() {
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+		wait.until(ExpectedConditions.elementToBeClickable(By.id("react-burger-menu-btn")));
+
+		LogOutElement logout = new LogOutElement(driver);
+		logout.clickLogout();
+		
+		String currentUrl = driver.getCurrentUrl();
+		Assert.assertTrue(currentUrl.contains("saucedemo.com"),"LogOut Function not redirected to login page");
+		
+	}
 	
 	@AfterSuite
 	public void tearDown() {

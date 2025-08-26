@@ -1,28 +1,29 @@
-package SwagLabsTestCases;
+package service;
 
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import Common.BrowserFactory;
-import SwagLabElement.CheckOut1Element;
+import SwagLabElement.CheckOutOneElement;
 import SwagLabElement.LoginElement;
 import SwagLabElement.MyCartElement;
 import SwagLabElement.ProductElement;
 import utils.ExcelReader;
 import utils.ScreenshotService;
 
-public class CheckOut1TestCase extends BrowserFactory {
+public class CheckoutOneService {
 
-    String checkOutUrl;
+    private WebDriver driver;
+    private String checkOutUrl;
 
-    @BeforeClass
-    public void uptoMyCart() {
+    public CheckoutOneService(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public void loginAndNavigateToCheckout() {
         LoginElement loginElement = new LoginElement(driver);
         loginElement.setUsername("standard_user");
         loginElement.setPassword("secret_sauce");
@@ -70,12 +71,8 @@ public class CheckOut1TestCase extends BrowserFactory {
         }
     }
 
-    @Test(priority = 1)
-    public void CheckOut1Functions() {
-        String filePath = System.getProperty("user.dir") + "/ExcelFile/SwagLabLoginData.xlsx";
+    public void performCheckoutTests(String filePath, SoftAssert softAssert) {
         List<String[]> testData = ExcelReader.readSheetData(filePath, 1);
-
-        SoftAssert softAssert = new SoftAssert();
 
         for (int i = 0; i < testData.size(); i++) {
             String[] row = testData.get(i);
@@ -87,7 +84,7 @@ public class CheckOut1TestCase extends BrowserFactory {
             System.out.println();
             System.out.println("Data " + (i + 1) + " Testing checkout with: FirstName :" + firstname + ", LastName :" + lastname + ", PostalCode:" + postalcode);
 
-            CheckOut1Element checkoutElement = new CheckOut1Element(driver);
+            CheckOutOneElement checkoutElement = new CheckOutOneElement(driver);
             checkoutElement.setFirstName(firstname);
             checkoutElement.setLastName(lastname);
             checkoutElement.setPostalCode(postalcode);
@@ -133,15 +130,6 @@ public class CheckOut1TestCase extends BrowserFactory {
             }
 
             driver.get(checkOutUrl);
-        }
-
-        // softAssert.assertAll(); // Uncomment if you want to aggregate all assertions
-    }
-
-    @AfterSuite
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
         }
     }
 }

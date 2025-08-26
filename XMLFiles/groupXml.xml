@@ -5,8 +5,8 @@
   <suite-file path="login.xml"></suite-file>
   <suite-file path="product.xml"></suite-file>
   <suite-file path="mycart.xml"></suite-file>
-  <suite-file path="checkout1.xml"></suite-file>
-  <suite-file path="checkout2.xml"></suite-file>
+  <suite-file path="checkoutOne.xml"></suite-file>
+  <suite-file path="checkoutTwo.xml"></suite-file>
   <suite-file path="confirmXml.xml"></suite-file>
   </suite-files>
 </suite> <!-- Suite -->
