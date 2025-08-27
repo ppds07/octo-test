@@ -1,0 +1,17 @@
+Test Summary
+Test Name,# Passed,# Skipped,# Retried,# Failed,Time (ms)
+LoginTest,1,0,0,0,9,253
+MyCartTest,4,0,0,0,16,896
+CheckOutConfirmationTest,3,0,0,0,4,648
+ProductTest,6,0,0,0,7,859
+Checkout Test,1,0,0,0,9,227
+Checkout Test,6,0,0,0,4,449
+
+Method Details
+Class Name,Method Name,Start Time,Duration (ms)
+SwagLabsTestCases.LoginTestCase,userLogin,1756189353133,9213
+SwagLabsTestCases.MyCartTestCase,checkOutButtonFunction,1756189393596,78
+SwagLabsTestCases.ConfirmationPageTestCase,ThankYouPagescreenshot,1756189421310,176
+SwagLabsTestCases.ProductTestCase,checkCartIconAfterAddingMultipleProducts,1756189369646,1469
+SwagLabsTestCases.CheckOutOneTestCase,CheckOut1Functions,1756189397438,8437
+SwagLabsTestCases.CheckOutTwoTestCase,clickFinishButton,1756189413738,93

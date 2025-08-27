@@ -1,4 +1,3 @@
-
 package SwagLabsTestCases;
 
 import org.testng.annotations.AfterSuite;
