@@ -3,8 +3,6 @@ package SwagLabsTestCases;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.Assert;
-
 import Common.BrowserFactory;
 import service.ProductService;
 
