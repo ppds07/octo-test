@@ -9,14 +9,17 @@ The goal of this project is to:
 - Validate login functionality, product listings, cart operations, and checkout flow.
 - Practice and demonstrate proficiency in test automation tools and frameworks.
 
-##  Repository Structure
+# Project Structure: `octo-test`
 
+```
 octo-test/
-├── README.md          # Project documentation
-├── tests/             # Test scripts organized by feature
-├── utils/             # Utility functions and helpers
-├── config/            # Configuration files (e.g., environment settings)
-└── reports/           # Test execution reports
+├── README.md       # Project documentation
+├── tests/          # Test scripts organized by feature
+├── utils/          # Utility functions and helpers
+├── config/         # Configuration files (e.g., environment settings)
+└── reports/        # Test execution reports
+```
+
 
 ## Technologies Used
 
