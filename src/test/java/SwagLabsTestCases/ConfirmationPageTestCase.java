@@ -40,9 +40,9 @@ public class ConfirmationPageTestCase extends BrowserFactory{
 		cartElement.clickCheckOutButton();
 		
 		CheckOutOneElement checkOne=new CheckOutOneElement(driver);
-		checkOne.setFirstName("Rathi Prabha");
-		checkOne.setLastName("E");
-		checkOne.setPostalCode("636030");
+		checkOne.setFirstName("Priyadharshan");
+		checkOne.setLastName("P");
+		checkOne.setPostalCode("600119");
 		checkOne.clickContinueButton();
 		
 		CheckOutTwoElement checkTwo=new CheckOutTwoElement(driver);
